@@ -2,6 +2,7 @@ package com.github.miajrush.universityrestservice.web.controller;
 
 import com.github.miajrush.universityrestservice.model.Group;
 import com.github.miajrush.universityrestservice.service.GroupService;
+import com.github.miajrush.universityrestservice.util.ErrorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

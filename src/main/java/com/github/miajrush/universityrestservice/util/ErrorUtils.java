@@ -1,4 +1,4 @@
-package com.github.miajrush.universityrestservice.web.controller;
+package com.github.miajrush.universityrestservice.util;
 
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;

@@ -12,13 +12,41 @@ import java.util.List;
  * {@link GroupRepository}.
  */
 public interface GroupService {
+	/**
+	 * Find all {@link Group}s.
+	 *
+	 * @return the collection of the {@link Group} objects.
+	 */
 	List<Group> findAll();
 	
+	/**
+	 * Find {@link Group} by ID.
+	 *
+	 * @param id provided {@link Group} id.
+	 * @return {@link Group} with provided ID or null otherwise.
+	 */
 	Group findById(Integer id);
 	
+	/**
+	 * Save provided {@link Group} entity.
+	 *
+	 * @param group provided {@link Group}.
+	 */
 	void save(Group group);
 	
+	/**
+	 * Update {@link Group} by provided parameters.
+	 *
+	 * @param id {@link Group} ID.
+	 * @param name {@link Group} name.
+	 * @param studentsNumber the number of students in the {@link Group}.
+	 */
 	void update(Integer id, String name, Integer studentsNumber);
 	
+	/**
+	 * Delete provided {@link Group} entity.
+	 *
+	 * @param group provided {@link Group}.
+	 */
 	void delete(Group group);
 }

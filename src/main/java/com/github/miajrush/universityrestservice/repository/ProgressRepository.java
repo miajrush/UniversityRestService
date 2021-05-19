@@ -7,6 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+/**
+ * {@link JpaRepository} for handling with {@link Progress} entity.
+ */
 public interface ProgressRepository extends JpaRepository<Progress, Integer> {
 	@Modifying
 	@Query("UPDATE Progress p SET p.student = :student, p.subject = :subject, p.grade = :grade " +

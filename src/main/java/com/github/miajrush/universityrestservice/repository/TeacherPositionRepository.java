@@ -5,6 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+/**
+ * {@link JpaRepository} for handling with {@link TeacherPosition} entity.
+ */
 public interface TeacherPositionRepository extends JpaRepository<TeacherPosition, Integer> {
 	@Modifying
 	@Query("UPDATE TeacherPosition t SET t.name = :name " +

@@ -6,6 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+/**
+ * {@link JpaRepository} for handling with {@link Student} entity.
+ */
 public interface StudentRepository extends JpaRepository<Student, Integer> {
 	@Modifying
 	@Query("UPDATE Student s " +

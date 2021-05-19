@@ -5,6 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+/**
+ * {@link JpaRepository} for handling with {@link Subject} entity.
+ */
 public interface SubjectRepository extends JpaRepository<Subject, Integer> {
 	@Modifying
 	@Query("UPDATE Subject s SET s.name = :name, s.hoursNumber = :hoursNumber " +

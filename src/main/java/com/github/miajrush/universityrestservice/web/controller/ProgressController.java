@@ -1,10 +1,10 @@
 package com.github.miajrush.universityrestservice.web.controller;
 
 import com.github.miajrush.universityrestservice.model.Progress;
-import com.github.miajrush.universityrestservice.model.Teacher;
 import com.github.miajrush.universityrestservice.service.ProgressService;
 import com.github.miajrush.universityrestservice.service.StudentService;
 import com.github.miajrush.universityrestservice.service.SubjectService;
+import com.github.miajrush.universityrestservice.util.ErrorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -6,6 +6,7 @@ import com.github.miajrush.universityrestservice.model.Student;
 import com.github.miajrush.universityrestservice.service.GroupService;
 import com.github.miajrush.universityrestservice.service.ProgressService;
 import com.github.miajrush.universityrestservice.service.StudentService;
+import com.github.miajrush.universityrestservice.util.ErrorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

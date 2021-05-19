@@ -5,6 +5,7 @@ import com.github.miajrush.universityrestservice.model.Teacher;
 import com.github.miajrush.universityrestservice.service.LessonService;
 import com.github.miajrush.universityrestservice.service.TeacherPositionService;
 import com.github.miajrush.universityrestservice.service.TeacherService;
+import com.github.miajrush.universityrestservice.util.ErrorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

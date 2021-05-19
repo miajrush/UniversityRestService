@@ -5,6 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+/**
+ * {@link JpaRepository} for handling with {@link LessonType} entity.
+ */
 public interface LessonTypeRepository extends JpaRepository<LessonType, Integer> {
 	@Modifying
 	@Query("UPDATE LessonType lt SET lt.name = :name " +
